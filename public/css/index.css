@@ -1,0 +1,437 @@
+*{-webkit-tap-highlight-color: transparent; display:flex; text-decoration: none; word-wrap: break-word;}
+
+head{display:none}
+
+body
+{
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    font-size: 0;
+    background-color: #161b22;
+}
+
+.topbar{
+    width:100%;
+    background-color: #24292f;
+    padding:4.267vw 0 4.267vw 0;
+    margin:0 auto 0 auto;
+}
+
+.sign_in{
+    border:0.267vw solid white;
+    border-radius:1.600vw;
+    margin:auto 9.333vw auto 5.333vw;
+}
+
+.sign_in p{
+    font:3.600vw Sans-serif;
+    color:white;
+    margin:auto;
+    padding:1.600vw 2.133vw 1.600vw 2.133vw;
+    position: relative;
+    bottom:0.107vw;
+}
+
+.topbar img{
+    width:8.533vw;
+    height:8.533vw;
+    margin:auto;
+}
+
+.hamburg, .hamopen{
+    margin:auto;
+    flex-direction: column;
+    cursor: pointer;
+    margin:auto 5.333vw auto auto;
+}
+
+.hamburg div, .hamopen div{
+    width:5.867vw;
+    height:0.533vw;
+    background-color: white;
+    margin:0.533vw 0 0.533vw 0;
+    border-radius: 13.333vw;
+    transition: 0.2s;
+}
+
+.hamopen div:nth-child(1){
+    transform: translateY(1.600vw) rotate(45deg);
+}
+
+.hamopen div:nth-child(2){
+    width:0;
+}
+
+.hamopen div:nth-child(3){
+    transform: translateY(-1.600vw) rotate(-45deg);
+}
+
+.profile{
+    margin:0 auto 6.400vw 4.267vw;
+}
+
+.profile img{
+    border:13.333vw;
+    width:14.823vw;
+    height:14.823vw;
+    margin: auto 4.267vw auto 0;
+}
+
+.profile div{
+    flex-direction: column;
+    margin:auto auto auto 0;
+    padding: 4.267vw 0 4.267vw 0;
+}
+
+.nickname{
+    font:6.400vw Sans-serif;
+    font-weight: 600;
+    color:white;
+    margin:0 auto 0 0;
+    line-height: 1.25;
+}
+
+.username{
+    font:5.333vw Sans-serif;
+    font-style: normal;
+    color:#7d8690;
+    line-height: 6.400vw;
+    margin:0 auto 0 0;
+}
+
+.follow{
+    margin:2.667vw auto 4.267vw 4.267vw;
+}
+
+.follow svg{
+    width:4.267vw;
+    height:4.267vw;
+    margin:auto;
+}
+
+.num1{
+    font:3.733vw Sans-serif;
+    color:white;
+    font-weight: bold;
+    margin:auto auto auto 1.333vw;
+}
+
+.txt1, .block{
+    font:3.733vw Sans-serif;
+    color:#7d8690;
+    margin:auto auto auto 1.333vw;
+}
+
+.block{margin-top: 4vw; margin-left: 4.267vw;}
+
+.follow_btn{
+    margin:0 auto 0 auto;
+    background-color: #21262d;
+    border-radius: 0.400vw;
+    width:91vw;
+    display: block;
+    text-align: center;
+    font:3.733vw Sans-serif;
+    padding:1.867vw 0 1.867vw 0;
+    color:#b2bac2;
+    outline:0.267vw solid #353c42;
+}
+
+.repo_title{
+    margin:5.333vw auto 0 4.267vw;
+}
+
+.repo_title svg{
+    width:4.267vw;
+    height: 4.267vw;
+    margin:auto 0.400vw auto 0;
+}
+
+.title{
+    font:3.733vw Sans-serif;
+    color:white;
+    font-weight: bold;
+    margin:auto;
+}
+
+.count{
+    font:0.75rem Sans-serif;
+    color:white;
+    padding: 0.400vw 1.600vw 0.400vw 1.600vw;
+    border-radius: 5.333vw;
+    background-color: #393f48;
+    margin:auto auto auto 1.867vw;
+}
+
+.repo{
+    flex-direction: column;
+    border-bottom: 0.267vw solid;
+    border-color: rgba(255, 255, 255, 0.3);
+    margin:8vw auto 0 auto;
+    width:91.5vw;
+    padding-bottom: 5.333vw;
+}
+
+.lane1 p:nth-child(1){
+    font:5.333vw Sans-serif;
+    color:#2e7ef0;
+    font-weight: bold;
+    margin:auto 2.667vw auto 0;
+}
+
+.lane1 p:nth-child(2){
+    font:0.75rem Sans-serif;
+    color:#777d89;
+    margin:auto auto auto 0;
+    border:0.133vw solid #393f48;
+    border-radius: 13.333vw;
+    padding:0.267vw 1.867vw 0.267vw 1.867vw;
+    position:relative;
+    bottom:0.267vw;
+}
+
+.desc{
+    font:3.733vw Sans-serif;
+    color:#6c7d86;
+    margin-bottom: 0;
+}
+
+.lane2{
+    width: auto;
+    max-width: 90vw;
+    flex-wrap: wrap;
+}
+
+.lane2 p{
+    font:3.200vw Sans-serif;
+    color:#2e7ef0;
+    border-radius: 13.333vw;
+    padding: 1.067vw 2.667vw 1.067vw 2.667vw;
+    margin-right: 2.667vw;
+    background-color: #1a2639;
+    margin-bottom: 0;
+}
+
+.pc_repos{display: none;}
+
+@media screen and (min-width:800px){
+    .repo{
+        display: none;
+    }
+
+    .topbar{
+        width:100%;
+        background-color: #24292f;
+        padding:1.093vw 0 1.093vw 0;
+        margin:0 auto 0 auto;
+    }
+    
+    .sign_in{
+        border:0.068vw solid white;
+        border-radius:0.410vw;
+        margin:auto 20.503vw auto 1.367vw;
+    }
+    
+    .sign_in p{
+        font:0.923vw Sans-serif;
+        color:white;
+        margin:auto;
+        padding:0.410vw 0.547vw 0.410vw 0.547vw;
+        position: relative;
+        bottom:0;
+    }
+    
+    .topbar img{
+        width:2.187vw;
+        height:2.187vw;
+        margin:auto;
+    }
+    
+    .hamburg, .hamopen{
+        margin:auto;
+        flex-direction: column;
+        cursor: pointer;
+        margin:auto 1.367vw auto auto;
+    }
+    
+    .hamburg div, .hamopen div{
+        width:1.504vw;
+        height:0.137vw;
+        background-color: white;
+        margin:0.137vw 0 0.137vw 0;
+        border-radius: 3.417vw;
+        transition: 0.2s;
+    }
+    
+    .hamopen div:nth-child(1){
+        transform: translateY(0.410vw) rotate(45deg);
+    }
+    
+    .hamopen div:nth-child(2){
+        width:0;
+    }
+    
+    .hamopen div:nth-child(3){
+        transform: translateY(-0.410vw) rotate(-45deg);
+    }
+    
+    .profile{
+        margin:0 auto 1.640vw auto;
+    }
+    
+    .profile img{
+        border:3.417vw;
+        width:6.834vw;
+        height:6.834vw;
+        margin: 1.367vw 1.093vw auto 0;
+    }
+    
+    .profile div{
+        flex-direction: column;
+        margin:auto auto auto 0;
+        padding: 1.093vw 0 1.093vw 0;
+    }
+    
+    .nickname{
+        font:1.640vw Sans-serif;
+        font-weight: 600;
+        color:white;
+        margin:0 auto 0 0;
+        line-height: 1.25;
+    }
+    
+    .username{
+        font:1.367vw Sans-serif;
+        font-style: normal;
+        color:#7d8690;
+        line-height: 1.640vw;
+        margin:0 auto 0 0;
+    }
+    
+    .follow{
+        margin:0 auto 1.093vw auto;
+    }
+    
+    .follow svg{
+        width:1.093vw;
+        height:1.093vw;
+        margin:auto;
+    }
+    
+    .num1{
+        font:0.957vw Sans-serif;
+        color:white;
+        font-weight: bold;
+        margin:auto auto auto 0.342vw;
+    }
+    
+    .txt1, .block{
+        font:0.957vw Sans-serif;
+        color:#7d8690;
+        margin:auto auto auto 0.342vw;
+    }
+    
+    .follow_btn{
+        margin:0 auto 0 auto;
+        background-color: #21262d;
+        border-radius: 0.342vw;
+        width:20vw;
+        display: block;
+        text-align: center;
+        font:0.957vw Sans-serif;
+        padding:0.478vw 0 0.478vw 0;
+        color:#b2bac2;
+        outline:0.068vw solid #353c42;
+    }
+    
+    .repo_title{
+        margin:1.367vw auto 0 1.093vw;
+    }
+    
+    .repo_title svg{
+        width:1.093vw;
+        height: 1.093vw;
+        margin:auto 0.342vw auto 0;
+    }
+    
+    .title{
+        font:0.957vw Sans-serif;
+        color:white;
+        font-weight: bold;
+        margin:auto;
+    }
+    
+    .count{
+        font:0.75rem Sans-serif;
+        color:white;
+        padding: 0.103vw 0.410vw 0.103vw 0.410vw;
+        border-radius: 1.367vw;
+        background-color: #393f48;
+        margin:auto auto auto 0.478vw;
+    }
+    
+    .repo1{
+        flex-direction: column;
+        border-bottom: 0.068vw solid;
+        border-color: rgba(255, 255, 255, 0.3);
+        margin:2.050vw auto 0 auto;
+        width:20.503vw;
+        padding-bottom: 1.367vw;
+    }
+    
+    .lane1 p:nth-child(1){
+        font:1.367vw Sans-serif;
+        color:#2e7ef0;
+        font-weight: bold;
+        margin:auto 0.683vw auto 0;
+        cursor: pointer;
+    }
+    
+    .lane1 p:nth-child(2){
+        font:0.75rem Sans-serif;
+        color:#777d89;
+        margin:auto auto auto 0;
+        border:0.034vw solid #393f48;
+        border-radius: 3.417vw;
+        padding:0.068vw 0.478vw 0.068vw 0.478vw;
+        position:relative;
+        bottom:0.068vw;
+    }
+    
+    .desc{
+        font:0.957vw Sans-serif;
+        color:#6c7d86;
+        margin-bottom: 0;
+    }
+    
+    .lane2{
+        width: auto;
+        max-width: 90vw;
+        flex-wrap: wrap;
+    }
+    
+    .lane2 p{
+        font:0.820vw Sans-serif;
+        color:#2e7ef0;
+        border-radius: 3.417vw;
+        padding: 0.273vw 0.683vw 0.273vw 0.683vw;
+        margin-right: 0.683vw;
+        background-color: #1a2639;
+        margin-bottom: 0;
+    }
+
+    .block{
+        margin-left: auto;
+        margin-top: 0.683vw;
+        cursor: pointer;
+    }
+
+    .pc_repos{
+        display: flex;
+        max-width:95vw;
+        flex-wrap: wrap;
+        margin: 0 auto 0  1.093vw;
+        gap:1.367vw;
+    }
+}
