@@ -76,6 +76,8 @@ body
     width:14.823vw;
     height:14.823vw;
     margin: auto 4.267vw auto 0;
+    overflow: hidden;
+    border-radius: 50px;
 }
 
 .profile div{
@@ -173,14 +175,14 @@ body
     padding-bottom: 5.333vw;
 }
 
-.lane1 p:nth-child(1){
+.lane1 a{
     font:5.333vw Sans-serif;
     color:#2e7ef0;
     font-weight: bold;
     margin:auto 2.667vw auto 0;
 }
 
-.lane1 p:nth-child(2){
+.lane1 p{
     font:0.75rem Sans-serif;
     color:#777d89;
     margin:auto auto auto 0;
@@ -212,6 +214,9 @@ body
     background-color: #1a2639;
     margin-bottom: 0;
 }
+
+.mob_repos{flex-direction: column;
+margin:auto;}
 
 .pc_repos{display: none;}
 
@@ -380,7 +385,7 @@ body
         padding-bottom: 1.367vw;
     }
     
-    .lane1 p:nth-child(1){
+    .lane1 a{
         font:1.367vw Sans-serif;
         color:#2e7ef0;
         font-weight: bold;
@@ -388,7 +393,7 @@ body
         cursor: pointer;
     }
     
-    .lane1 p:nth-child(2){
+    .lane1 p{
         font:0.75rem Sans-serif;
         color:#777d89;
         margin:auto auto auto 0;
@@ -433,5 +438,9 @@ body
         flex-wrap: wrap;
         margin: 0 auto 0  1.093vw;
         gap:1.367vw;
+    }
+
+    .follow_btn:hover{
+        background-color: #3f4956;
     }
 }
